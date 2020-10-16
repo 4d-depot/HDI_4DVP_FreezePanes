@@ -1,4 +1,4 @@
-Title: How do I freeze columns and rows in 4D View Pro??
+Title: How do I freeze columns and rows in 4D View Pro?
 
 Version min: 4D v18 R2
 
