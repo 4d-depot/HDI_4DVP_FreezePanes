@@ -1,0 +1,204 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 22,
+					"left": 23,
+					"width": 879,
+					"height": 679,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 119,
+					"left": 51,
+					"width": 828,
+					"height": 560,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/information.4dm"
+				}
+			},
+			"entryOrder": []
+		},
+		{
+			"objects": {
+				"information2": {
+					"type": "input",
+					"top": 59,
+					"left": 44,
+					"width": 828,
+					"height": 48,
+					"sizingX": "grow",
+					"dataSource": "Infos[1].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ViewProArea": {
+					"type": "view",
+					"left": 38,
+					"top": 329,
+					"width": 852,
+					"height": 357,
+					"userInterface": "none",
+					"withFormulaBar": false,
+					"events": [
+						"onVPReady"
+					],
+					"method": "ObjectMethods/ViewProArea.4dm",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 178,
+					"left": 628,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace"
+				},
+				"Button": {
+					"type": "button",
+					"text": "Apply",
+					"top": 214,
+					"left": 628,
+					"width": 186,
+					"height": 31,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"Input": {
+					"type": "input",
+					"left": 359,
+					"top": 179,
+					"width": 205,
+					"height": 16,
+					"dataSource": "Form:C1466.panes.columnCount"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Number of frozen panes on the left:",
+					"top": 180,
+					"left": 100,
+					"width": 240,
+					"height": 15
+				},
+				"Input1": {
+					"type": "input",
+					"left": 359,
+					"top": 207,
+					"width": 205,
+					"height": 16,
+					"dataSource": "Form:C1466.panes.trailingColumnCount"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Number of frozen panes on the right:",
+					"top": 208,
+					"left": 100,
+					"width": 240,
+					"height": 15
+				},
+				"Input2": {
+					"type": "input",
+					"left": 359,
+					"top": 236,
+					"width": 205,
+					"height": 16,
+					"dataSource": "Form:C1466.panes.rowCount"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Number of frozen panes on the top:",
+					"top": 237,
+					"left": 100,
+					"width": 240,
+					"height": 15
+				},
+				"Input3": {
+					"type": "input",
+					"left": 359,
+					"top": 265,
+					"width": 205,
+					"height": 16,
+					"dataSource": "Form:C1466.panes.trailingRowCount"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Number of frozen panes on the bottom:",
+					"top": 266,
+					"left": 100,
+					"width": 240,
+					"height": 15
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"formSizeAnchor": "Tab Control",
+	"rightMargin": 20,
+	"bottomMargin": 20
+}
